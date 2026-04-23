@@ -1,5 +1,7 @@
 # vite-rac-tsr-504-repro
 
+> Tracking issue: https://github.com/vitejs/vite/issues/22303
+
 Reproduction for a Vite 8 dev-server race: navigating to a lazy TanStack
 Router route whose lazy chunk imports `react-aria-components/Button` through
 a workspace-package wrapper returns `504 Outdated Optimize Dep` on the
