@@ -11,25 +11,9 @@ export default defineConfig(() => ({
     resolve: {
         tsconfigPaths: true
     },
-    // WORKAROUND: uncomment to fix the 504. Without it, navigating to /counter reproducibly
-    // fails with "Failed to fetch dynamically imported module" because Vite's dep optimizer
-    // bumps the per-subpath `?v=` hash for react-aria-components/Button between the time
-    // the home page is served (which eagerly imports `react-aria-components/Link` via the
-    // intent-ui Link wrapper) and the time modules/demo/src/counter/Counter.lazy.tsx is
-    // evaluated on the client.
-    //
+    // WORKAROUND: uncomment to fix the 504.
     // optimizeDeps: {
-    //     include: [
-    //         "react-aria-components/Button",
-    //         "react-aria-components/FieldError",
-    //         "react-aria-components/Group",
-    //         "react-aria-components/Input",
-    //         "react-aria-components/Label",
-    //         "react-aria-components/Link",
-    //         "react-aria-components/Text",
-    //         "react-aria-components/TextField",
-    //         "react-aria-components/composeRenderProps"
-    //     ]
+    //     include: ["react-aria-components/Button"]
     // },
     plugins: [
         tailwindcss(),

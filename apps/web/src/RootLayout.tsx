@@ -11,12 +11,11 @@ interface RootLayoutProps {
 export function RootLayout({ children }: RootLayoutProps) {
     return (
         <>
-            <nav className="flex gap-4 border-b px-6 py-3">
+            <nav style={{ display: "flex", gap: 12, padding: 12, borderBottom: "1px solid #ccc" }}>
                 <Link to="/">Home</Link>
                 <Link to="/counter">Counter</Link>
-                <Link to="/todos">Todos</Link>
             </nav>
-            <main className="p-6">{children}</main>
+            <main style={{ padding: 16 }}>{children}</main>
         </>
     );
 }
