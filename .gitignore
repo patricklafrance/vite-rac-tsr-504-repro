@@ -28,3 +28,6 @@ count.txt
 
 # Claude
 .claude/worktrees
+
+# Claude
+.claude
