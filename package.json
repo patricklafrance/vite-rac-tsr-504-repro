@@ -1,0 +1,14 @@
+{
+    "name": "vite-rac-tsr-504-repro",
+    "version": "0.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "pnpm --filter @apps/web dev"
+    },
+    "engines": {
+        "node": ">=24.0.0",
+        "pnpm": ">=10"
+    },
+    "packageManager": "pnpm@10.30.1"
+}
